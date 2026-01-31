@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Bubba & Bear🧸</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-left">
+        <h1 class="logo">Bubba & Bear <span>🧸</span></h1>
+    </div>
+
+    <ul class="nav-menu">
+         <li><a href="#home">Home</a></li>
+        <li><a href="#about">Tentang Kami</a></li>
+        <li><a href="#product">Produk Kami</a></li>
+        <li><a href="#contact">Kontak</a></li>
+    </ul>
+
+    <div class="nav-right">
+        <button class="cart-btn" onclick="openCart()">
+            🛒 <span id="cart-count">0</span>
+        </button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <h2>Perlengkapan Bayi Berkualitas & Aman</h2>
+    <p>Cinta Ibu dalam Setiap Detail</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>Tentang Bubba & Bear 🧸</h2>
+            <p>
+    Bubba & Bear 🧸 Store hadir sebagai sahabat para orang tua
+    dalam memenuhi kebutuhan perlengkapan bayi yang berkualitas,
+    aman, dan nyaman digunakan setiap hari.
+    Kami percaya bahwa setiap bayi berhak mendapatkan produk terbaik
+    untuk mendukung tumbuh kembangnya sejak dini.
+    Oleh karena itu, setiap produk Bubba & Bear dipilih dengan teliti,
+    menggunakan bahan yang lembut, aman untuk kulit sensitif,
+    serta memiliki desain lucu dan menenangkan.
+    Dengan cinta dan perhatian di setiap detail,
+    kami berkomitmen menghadirkan perlengkapan bayi
+    yang tidak hanya fungsional, tetapi juga penuh kehangatan
+    untuk buah hati tercinta.
+</p>
+
+        </div>
+
+        <div class="about-image">
+            <img src="https://i.pinimg.com/1200x/83/a9/23/83a923f78484e9edd99bb7e372c0151e.jpg" alt="Bubba & Bear 🧸">
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCT -->
+<section id="product" class="product">
+    <h2>Produk Kami</h2>
+
+    <div class="product-list">
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/58/8c/bf/588cbfa1be070895ce85e2969ddfaad7.jpg">
+            <h3>Set Baju Bayi Premium</h3>
+            <p>Rp 120.000</p>
+            <button onclick="addToCart('Set Baju Bayi Premium',120000)">Tambah</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/d6/1d/5a/d61d5a5fb62bc22e0b87e05d54126dd8.jpg">
+            <h3>Botol Susu Anti Kolik</h3>
+            <p>Rp 85.000</p>
+            <button onclick="addToCart('Botol Susu Anti Kolik',85000)">Tambah</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/5a/3a/f9/5a3af91dc410e01d6cdb8ab1a1818d51.jpg">
+            <h3>Bedong Bayi Lembut</h3>
+            <p>Rp 65.000</p>
+            <button onclick="addToCart('Bedong Bayi Lembut',65000)">Tambah</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/d8/30/a7/d830a7f4e7f7ce7606f5c4607acf5430.jpg">
+            <h3>Topi bayi</h3>
+            <p>Rp 50.000</p>
+            <button onclick="addToCart('Topi bayi',50000)">Tambah</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/7e/e5/76/7ee5762d65d96c7737275aae0ed8b559.jpg">
+            <h3>Mainan Edukasi Bayi</h3>
+            <p>Rp 150.000</p>
+            <button onclick="addToCart('Mainan Edukasi Bayi',90000)">Tambah</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/48/e8/41/48e841008b85bf2a960e5e49f3273268.jpg">
+            <h3>Perlengkapan Makan Bayi</h3>
+            <p>Rp 110.000</p>
+            <button onclick="addToCart('Perlengkapan Makan Bayi',110000)">Tambah</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/8e/89/ff/8e89ff2bd9d832652981677f43800e6f.jpg">
+            <h3>Kelambu Keranjang Tidur bayi</h3>
+            <p>Rp 2.000.000</p>
+            <button onclick="addToCart('Kelambu Tidur Bayi',200000)">Tambah</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/e3/3e/96/e33e9695ba7f9cdc902d5eb673f6c10f.jpg">
+            <h3>Pompa ASI Elektrik</h3>
+            <p>Rp 800.000</p>
+            <button onclick="addToCart('Pompa ASI Elektrik',800000)">Tambah</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROMO -->
+<section class="promo">
+    <h2>🎉 Promo Spesial Bubba & Bear 🧸</h2>
+    <div class="promo-box">
+        <div class="promo-card">
+            <h3>Diskon 20%</h3>
+            <p>Untuk produk pilihan setiap minggu</p>
+        </div>
+
+        <div class="promo-card">
+            <h3>Paket Newborn</h3>
+            <p>Hemat hingga Rp50.000</p>
+        </div>
+
+        <div class="promo-card">
+            <h3>Gratis Ongkir</h3>
+            <p>Min. belanja Rp200.000</p>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONI -->
+<section class="testimonial">
+    <h2>Apa Kata Bunda 💕</h2>
+
+    <div class="testimonial-box">
+        <div class="testimonial-card">
+            <p>
+                “Produknya lucu banget dan bahannya super lembut.
+                Bayi aku nyaman banget pakainya!”
+            </p>
+            <h4>- Bunda Aisyah</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                “Packing rapi, pengiriman cepat.
+                Recommended banget Bubba & Bear 🧸”
+            </p>
+            <h4>- Bunda Rina</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                “Harga terjangkau tapi kualitas premium.
+                Pasti order lagi.”
+            </p>
+            <h4>- Bunda Nabila</h4>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+    <h2>Pertanyaan Umum (FAQ)</h2>
+
+    <div class="faq-item">
+        <button class="faq-question">Apakah produk aman untuk newborn?</button>
+        <div class="faq-answer">
+            <p>Ya, semua produk Bubba & Bear 🧸 aman dan lembut untuk bayi baru lahir.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Apakah bisa COD?</button>
+        <div class="faq-answer">
+            <p>Bisa, tergantung area pengiriman.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Berapa lama pengiriman?</button>
+        <div class="faq-answer">
+            <p>Pengiriman biasanya 2 sampai 5 hari kerja.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PESANAN ANDA -->
+<section class="order">
+    <h2>🛒 Pesanan Anda</h2>
+    <p class="order-subtitle">
+        Silakan isi data Anda untuk melanjutkan pesanan
+    </p>
+
+    <form class="order-form">
+        <div class="form-group">
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama Anda" required>
+        </div>
+
+        <div class="form-group">
+            <label>No. WhatsApp</label>
+            <input type="tel" placeholder="08xxxxxxxxxx" required>
+        </div>
+
+        <div class="form-group">
+            <label>Alamat Lengkap</label>
+            <textarea rows="3" placeholder="Masukkan alamat pengiriman" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Catatan (Opsional)</label>
+            <textarea rows="2" placeholder="Contoh: warna, ukuran, dll"></textarea>
+        </div>
+
+        <button type="submit" class="order-btn">
+            Kirim Pesanan
+        </button>
+    </form>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Hubungi Bubba & Bear 🧸</h2>
+    <p class="contact-subtitle">
+        Kami siap membantu Anda dengan sepenuh hati 💕
+    </p>
+
+    <div class="contact-box">
+    <a 
+        href="https://www.google.com/maps/search/?api=1&query=JL.+P.+JAYAKARTA+LINK.+MARTAPURA+KEC.+JOMBANG+KEL.+MASIGIT+CILEGON" 
+        target="_blank" 
+        class="contact-card link-card"
+    >
+        <span class="icon">📍</span>
+        <h3>Alamat</h3>
+        <p>JL. P. Jayakarta Link. Martapura</p>
+    </a>
+
+        <div class="contact-card">
+            <span class="icon">📞</span>
+            <h3>Telepon</h3>
+            <p>0831-0336-7001</p>
+        </div>
+
+        <div class="contact-card">
+            <span class="icon">📧</span>
+            <h3>Email</h3>
+            <p>BuBear@gmail.com</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2023 Bubba & Bear 🧸</p>
+</footer>
+
+<!-- POPUP KERANJANG -->
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+        <h2>Keranjang Belanja</h2>
+        <ul id="cart-items"></ul>
+        <h3>Total: Rp <span id="cart-total">0</span></h3>
+
+        <div class="cart-action">
+            <button onclick="closeCart()">Tutup</button>
+            <button class="checkout">Checkout</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
